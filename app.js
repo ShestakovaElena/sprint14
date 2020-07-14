@@ -1,8 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const helmet = require('helmet');
 
 const cardsRouter = require('./routes/cards');
-
 const usersRouter = require('./routes/users');
 
 const { PORT = 3000 } = process.env;
@@ -12,13 +12,7 @@ const { createUser, login } = require('./controllers/users');
 const auth = require('./middlewares/auth');
 
 const app = express();
-
-/* app.use((req, res, next) => {
-  req.user = {
-    _id: '5f046738b13ba00ccc37b926',
-  };
-  next();
-}); */
+app.use(helmet());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

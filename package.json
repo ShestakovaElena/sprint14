@@ -1,7 +1,7 @@
 {
-  "name": "sprint13",
+  "name": "sprint14",
   "version": "1.0.0",
-  "description": "project 13 for Ya.Praktikum",
+  "description": "project 14 for Ya.Praktikum",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -18,6 +18,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
+    "helmet": "^3.23.3",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.21",
     "validator": "^13.1.1"
